@@ -1,6 +1,8 @@
 [merge]
-tool = unityyamlmerge
+	tool = unity_yaml
 
-[mergetool "unityyamlmerge"]
-trustExitCode = false
-cmd = "C:\Program Files\Unity\Hub\Editor\2019.2.16f1\Editor\Data\Tools\UnityYAMLMerge.exe" merge -p "$BASE" "$REMOTE" "$LOCAL" "$MERGED"
+[mergetool "unity_yaml"]
+	cmd = 'C:\Program Files\Unity\Hub\Editor\2019.2.16f1\Editor\Data\Tools\UnityYAMLMerge.exe' merge -p "$BASE" "$REMOTE" "$LOCAL" "$MERGED"
+	trustExitCode = false
+	keepTemporaries = true
+	keepBackup = false
